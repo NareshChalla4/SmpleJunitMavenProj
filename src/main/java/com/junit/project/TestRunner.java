@@ -8,18 +8,12 @@
  * http://www.eclipse.org/legal/epl-v20.html
  */
 
-package com.example.project;
+package com.junit.project;
 
-import org.junit.jupiter.api.Test;
+public class TestRunner {
 
-class OtherTests {
-
-	@Test
-	void testThisThing() {
-	}
-
-	@Test
-	void testThisOtherThing() {
+	public int add(int a, int b) {
+		return a + b;
 	}
 
 }

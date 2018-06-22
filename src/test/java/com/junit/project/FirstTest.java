@@ -8,7 +8,7 @@
  * http://www.eclipse.org/legal/epl-v20.html
  */
 
-package com.example.project;
+package com.junit.project;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -23,8 +23,8 @@ class FirstTest {
 	@Test
 	@DisplayName("My 1st JUnit 5 test Automation ! 😎")
 	void myFirstTest(TestInfo testInfo) {
-		Calculator calculator = new Calculator();
-		assertEquals(2, calculator.add(1, 1), "1 + 1 should equal 2");
+		TestRunner testRunner = new TestRunner();
+		assertEquals(2, testRunner.add(1, 1), "1 + 1 should equal 2");
 		assertEquals("My 1st JUnit 5 test Automation ! 😎", testInfo.getDisplayName(), () -> "TestInfo is injected correctly");
 	}
 
