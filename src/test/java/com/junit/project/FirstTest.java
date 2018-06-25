@@ -21,11 +21,11 @@ import org.junit.jupiter.api.TestInfo;
 class FirstTest {
 
 	@Test
-	@DisplayName("My 1st JUnit 5 test Automation ! 😎")
+	@DisplayName("My 1st JUnit 5 test Automation 123 ! 😎")
 	void myFirstTest(TestInfo testInfo) {
 		TestRunner testRunner = new TestRunner();
 		assertEquals(2, testRunner.add(1, 1), "1 + 1 should equal 2");
-		assertEquals("My 1st JUnit 5 test Automation ! 😎", testInfo.getDisplayName(), () -> "TestInfo is injected correctly");
+		assertEquals("My 1st JUnit 5 test Automation 123 ! 😎", testInfo.getDisplayName(), () -> "TestInfo is injected correctly");
 	}
 
 }
