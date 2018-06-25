@@ -18,6 +18,6 @@ public class JUnit4Test {
 
 	@Test
 	public void test() {
-		assertEquals(3, 1 + 2);
+		assertEquals(4, 2 + 2);
 	}
 }
